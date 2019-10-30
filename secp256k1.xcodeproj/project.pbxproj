@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A9C0C002369C9190042035A /* hash_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BB82369C9150042035A /* hash_impl.h */; };
+		0A9C0C022369C9190042035A /* main_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BBD2369C9150042035A /* main_impl.h */; };
+		0A9C0C042369C9190042035A /* main_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BC12369C9150042035A /* main_impl.h */; };
+		0A9C0C052369C9190042035A /* field.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BC22369C9150042035A /* field.h */; };
+		0A9C0C072369C9190042035A /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BC42369C9150042035A /* ecdsa.h */; };
+		0A9C0C082369C9190042035A /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BC52369C9150042035A /* util.h */; };
+		0A9C0C092369C9190042035A /* field_10x26.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BC62369C9150042035A /* field_10x26.h */; };
+		0A9C0C0A2369C9190042035A /* ecdsa_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BC72369C9150042035A /* ecdsa_impl.h */; };
+		0A9C0C0C2369C9190042035A /* field_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BC92369C9150042035A /* field_impl.h */; };
+		0A9C0C0D2369C9190042035A /* field_5x52_int128_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BCA2369C9150042035A /* field_5x52_int128_impl.h */; };
+		0A9C0C0E2369C9190042035A /* scalar_4x64.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BCB2369C9150042035A /* scalar_4x64.h */; };
+		0A9C0C102369C9190042035A /* field_10x26_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BCD2369C9160042035A /* field_10x26_impl.h */; };
+		0A9C0C112369C9190042035A /* ecmult_const.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BCE2369C9160042035A /* ecmult_const.h */; };
+		0A9C0C122369C9190042035A /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BCF2369C9160042035A /* hash.h */; };
+		0A9C0C142369C9190042035A /* num_gmp_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BD22369C9160042035A /* num_gmp_impl.h */; };
+		0A9C0C162369C9190042035A /* eckey_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BD42369C9160042035A /* eckey_impl.h */; };
+		0A9C0C182369C9190042035A /* basic-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BD62369C9160042035A /* basic-config.h */; };
+		0A9C0C192369C9190042035A /* scratch_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BD72369C9160042035A /* scratch_impl.h */; };
+		0A9C0C1B2369C9190042035A /* scalar_low_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BD92369C9160042035A /* scalar_low_impl.h */; };
+		0A9C0C1C2369C9190042035A /* ecmult_gen_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BDA2369C9160042035A /* ecmult_gen_impl.h */; };
+		0A9C0C1D2369C9190042035A /* eckey.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BDB2369C9160042035A /* eckey.h */; };
+		0A9C0C1E2369C9190042035A /* field_5x52_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BDC2369C9160042035A /* field_5x52_impl.h */; };
+		0A9C0C1F2369C9190042035A /* scalar_8x32.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BDD2369C9170042035A /* scalar_8x32.h */; };
+		0A9C0C202369C9190042035A /* ecmult.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BDE2369C9170042035A /* ecmult.h */; };
+		0A9C0C212369C9190042035A /* field_5x52.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BDF2369C9170042035A /* field_5x52.h */; };
+		0A9C0C222369C9190042035A /* scalar_low.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BE02369C9170042035A /* scalar_low.h */; };
+		0A9C0C252369C9190042035A /* scalar_4x64_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BE32369C9170042035A /* scalar_4x64_impl.h */; };
+		0A9C0C262369C9190042035A /* scratch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BE42369C9170042035A /* scratch.h */; };
+		0A9C0C272369C9190042035A /* group.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BE52369C9170042035A /* group.h */; };
+		0A9C0C312369C9190042035A /* group_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BF22369C9170042035A /* group_impl.h */; };
+		0A9C0C322369C9190042035A /* num_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BF32369C9180042035A /* num_impl.h */; };
+		0A9C0C332369C9190042035A /* num.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BF42369C9180042035A /* num.h */; };
+		0A9C0C352369C9190042035A /* field_5x52_asm_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BF62369C9180042035A /* field_5x52_asm_impl.h */; };
+		0A9C0C362369C9190042035A /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BF72369C9180042035A /* scalar.h */; };
+		0A9C0C372369C9190042035A /* scalar_8x32_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BF82369C9180042035A /* scalar_8x32_impl.h */; };
+		0A9C0C382369C9190042035A /* num_gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BF92369C9180042035A /* num_gmp.h */; };
+		0A9C0C392369C9190042035A /* ecmult_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BFA2369C9180042035A /* ecmult_gen.h */; };
+		0A9C0C3C2369C9190042035A /* scalar_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BFD2369C9180042035A /* scalar_impl.h */; };
+		0A9C0C3D2369C9190042035A /* ecmult_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BFE2369C9190042035A /* ecmult_impl.h */; };
+		0A9C0C3E2369CA730042035A /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* secp256k1.c */; };
+		0A9C0C3F2369CAAE0042035A /* ecmult_const_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9C0BC32369C9150042035A /* ecmult_const_impl.h */; };
+		0A9C0C462369CEEC0042035A /* libsecp256k1-config.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* libsecp256k1-config.h */; };
+		0A9C0C472369CEEF0042035A /* ecmult_static_context.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ecmult_static_context.h */; };
+		0A9C0C482369CEF30042035A /* secp256k1_main.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* secp256k1_main.h */; };
+		OBJ_34 /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* secp256k1_ecdh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_35 /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* secp256k1_recovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_36 /* secp256k1_preallocated.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* secp256k1_preallocated.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_37 /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* secp256k1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_44 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A9C0BB82369C9150042035A /* hash_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_impl.h; sourceTree = "<group>"; };
+		0A9C0BBD2369C9150042035A /* main_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_impl.h; sourceTree = "<group>"; };
+		0A9C0BC12369C9150042035A /* main_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_impl.h; sourceTree = "<group>"; };
+		0A9C0BC22369C9150042035A /* field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field.h; sourceTree = "<group>"; };
+		0A9C0BC32369C9150042035A /* ecmult_const_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_const_impl.h; sourceTree = "<group>"; };
+		0A9C0BC42369C9150042035A /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		0A9C0BC52369C9150042035A /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		0A9C0BC62369C9150042035A /* field_10x26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26.h; sourceTree = "<group>"; };
+		0A9C0BC72369C9150042035A /* ecdsa_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa_impl.h; sourceTree = "<group>"; };
+		0A9C0BC92369C9150042035A /* field_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_impl.h; sourceTree = "<group>"; };
+		0A9C0BCA2369C9150042035A /* field_5x52_int128_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_5x52_int128_impl.h; sourceTree = "<group>"; };
+		0A9C0BCB2369C9150042035A /* scalar_4x64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_4x64.h; sourceTree = "<group>"; };
+		0A9C0BCD2369C9160042035A /* field_10x26_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26_impl.h; sourceTree = "<group>"; };
+		0A9C0BCE2369C9160042035A /* ecmult_const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_const.h; sourceTree = "<group>"; };
+		0A9C0BCF2369C9160042035A /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		0A9C0BD22369C9160042035A /* num_gmp_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num_gmp_impl.h; sourceTree = "<group>"; };
+		0A9C0BD42369C9160042035A /* eckey_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey_impl.h; sourceTree = "<group>"; };
+		0A9C0BD62369C9160042035A /* basic-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "basic-config.h"; sourceTree = "<group>"; };
+		0A9C0BD72369C9160042035A /* scratch_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scratch_impl.h; sourceTree = "<group>"; };
+		0A9C0BD92369C9160042035A /* scalar_low_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_low_impl.h; sourceTree = "<group>"; };
+		0A9C0BDA2369C9160042035A /* ecmult_gen_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen_impl.h; sourceTree = "<group>"; };
+		0A9C0BDB2369C9160042035A /* eckey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey.h; sourceTree = "<group>"; };
+		0A9C0BDC2369C9160042035A /* field_5x52_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_5x52_impl.h; sourceTree = "<group>"; };
+		0A9C0BDD2369C9170042035A /* scalar_8x32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32.h; sourceTree = "<group>"; };
+		0A9C0BDE2369C9170042035A /* ecmult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult.h; sourceTree = "<group>"; };
+		0A9C0BDF2369C9170042035A /* field_5x52.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_5x52.h; sourceTree = "<group>"; };
+		0A9C0BE02369C9170042035A /* scalar_low.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_low.h; sourceTree = "<group>"; };
+		0A9C0BE32369C9170042035A /* scalar_4x64_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_4x64_impl.h; sourceTree = "<group>"; };
+		0A9C0BE42369C9170042035A /* scratch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scratch.h; sourceTree = "<group>"; };
+		0A9C0BE52369C9170042035A /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
+		0A9C0BF22369C9170042035A /* group_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_impl.h; sourceTree = "<group>"; };
+		0A9C0BF32369C9180042035A /* num_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num_impl.h; sourceTree = "<group>"; };
+		0A9C0BF42369C9180042035A /* num.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num.h; sourceTree = "<group>"; };
+		0A9C0BF62369C9180042035A /* field_5x52_asm_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_5x52_asm_impl.h; sourceTree = "<group>"; };
+		0A9C0BF72369C9180042035A /* scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar.h; sourceTree = "<group>"; };
+		0A9C0BF82369C9180042035A /* scalar_8x32_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32_impl.h; sourceTree = "<group>"; };
+		0A9C0BF92369C9180042035A /* num_gmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num_gmp.h; sourceTree = "<group>"; };
+		0A9C0BFA2369C9180042035A /* ecmult_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen.h; sourceTree = "<group>"; };
+		0A9C0BFD2369C9180042035A /* scalar_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_impl.h; sourceTree = "<group>"; };
+		0A9C0BFE2369C9190042035A /* ecmult_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_impl.h; sourceTree = "<group>"; };
+		OBJ_10 /* secp256k1_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_main.h; sourceTree = "<group>"; };
+		OBJ_13 /* secp256k1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = secp256k1.c; sourceTree = "<group>"; };
+		OBJ_15 /* secp256k1_ecdh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_ecdh.h; sourceTree = "<group>"; };
+		OBJ_16 /* secp256k1_recovery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_recovery.h; sourceTree = "<group>"; };
+		OBJ_17 /* secp256k1_preallocated.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_preallocated.h; sourceTree = "<group>"; };
+		OBJ_18 /* secp256k1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		OBJ_22 /* Example */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Example; sourceTree = SOURCE_ROOT; };
+		OBJ_23 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = SOURCE_ROOT; };
+		OBJ_24 /* secp256k1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = secp256k1; sourceTree = SOURCE_ROOT; };
+		OBJ_25 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_8 /* libsecp256k1-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libsecp256k1-config.h"; sourceTree = "<group>"; };
+		OBJ_9 /* ecmult_static_context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecmult_static_context.h; sourceTree = "<group>"; };
+		"secp256k1::secp256k1::Product" /* secp256k1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = secp256k1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A9C0BB92369C9150042035A /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C0BBA2369C9150042035A /* recovery */,
+				0A9C0BBE2369C9150042035A /* ecdh */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		0A9C0BBA2369C9150042035A /* recovery */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C0BBD2369C9150042035A /* main_impl.h */,
+			);
+			path = recovery;
+			sourceTree = "<group>";
+		};
+		0A9C0BBE2369C9150042035A /* ecdh */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C0BC12369C9150042035A /* main_impl.h */,
+			);
+			path = ecdh;
+			sourceTree = "<group>";
+		};
+		OBJ_11 /* secp256k1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* src */,
+				OBJ_14 /* include */,
+			);
+			path = secp256k1;
+			sourceTree = "<group>";
+		};
+		OBJ_12 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				0A9C0BD62369C9160042035A /* basic-config.h */,
+				0A9C0BC72369C9150042035A /* ecdsa_impl.h */,
+				0A9C0BC42369C9150042035A /* ecdsa.h */,
+				0A9C0BD42369C9160042035A /* eckey_impl.h */,
+				0A9C0BDB2369C9160042035A /* eckey.h */,
+				0A9C0BC32369C9150042035A /* ecmult_const_impl.h */,
+				0A9C0BCE2369C9160042035A /* ecmult_const.h */,
+				0A9C0BDA2369C9160042035A /* ecmult_gen_impl.h */,
+				0A9C0BFA2369C9180042035A /* ecmult_gen.h */,
+				0A9C0BFE2369C9190042035A /* ecmult_impl.h */,
+				0A9C0BDE2369C9170042035A /* ecmult.h */,
+				0A9C0BF62369C9180042035A /* field_5x52_asm_impl.h */,
+				0A9C0BDC2369C9160042035A /* field_5x52_impl.h */,
+				0A9C0BCA2369C9150042035A /* field_5x52_int128_impl.h */,
+				0A9C0BDF2369C9170042035A /* field_5x52.h */,
+				0A9C0BCD2369C9160042035A /* field_10x26_impl.h */,
+				0A9C0BC62369C9150042035A /* field_10x26.h */,
+				0A9C0BC92369C9150042035A /* field_impl.h */,
+				0A9C0BC22369C9150042035A /* field.h */,
+				0A9C0BF22369C9170042035A /* group_impl.h */,
+				0A9C0BE52369C9170042035A /* group.h */,
+				0A9C0BB82369C9150042035A /* hash_impl.h */,
+				0A9C0BCF2369C9160042035A /* hash.h */,
+				0A9C0BB92369C9150042035A /* modules */,
+				0A9C0BD22369C9160042035A /* num_gmp_impl.h */,
+				0A9C0BF92369C9180042035A /* num_gmp.h */,
+				0A9C0BF32369C9180042035A /* num_impl.h */,
+				0A9C0BF42369C9180042035A /* num.h */,
+				0A9C0BE32369C9170042035A /* scalar_4x64_impl.h */,
+				0A9C0BCB2369C9150042035A /* scalar_4x64.h */,
+				0A9C0BF82369C9180042035A /* scalar_8x32_impl.h */,
+				0A9C0BDD2369C9170042035A /* scalar_8x32.h */,
+				0A9C0BFD2369C9180042035A /* scalar_impl.h */,
+				0A9C0BD92369C9160042035A /* scalar_low_impl.h */,
+				0A9C0BE02369C9170042035A /* scalar_low.h */,
+				0A9C0BF72369C9180042035A /* scalar.h */,
+				0A9C0BD72369C9160042035A /* scratch_impl.h */,
+				0A9C0BE42369C9170042035A /* scratch.h */,
+				OBJ_13 /* secp256k1.c */,
+				0A9C0BC52369C9150042035A /* util.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		OBJ_14 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_15 /* secp256k1_ecdh.h */,
+				OBJ_16 /* secp256k1_recovery.h */,
+				OBJ_17 /* secp256k1_preallocated.h */,
+				OBJ_18 /* secp256k1.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"secp256k1::secp256k1::Product" /* secp256k1.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_19 /* Tests */,
+				OBJ_20 /* Products */,
+				OBJ_22 /* Example */,
+				OBJ_23 /* include */,
+				OBJ_24 /* secp256k1 */,
+				OBJ_25 /* LICENSE */,
+				OBJ_26 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* libsecp256k1-config.h */,
+				OBJ_9 /* ecmult_static_context.h */,
+				OBJ_10 /* secp256k1_main.h */,
+				OBJ_11 /* secp256k1 */,
+			);
+			name = Sources;
+			path = secp256k1/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		OBJ_33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 0;
+			files = (
+				0A9C0C1F2369C9190042035A /* scalar_8x32.h in Headers */,
+				0A9C0C082369C9190042035A /* util.h in Headers */,
+				0A9C0C482369CEF30042035A /* secp256k1_main.h in Headers */,
+				0A9C0C1E2369C9190042035A /* field_5x52_impl.h in Headers */,
+				0A9C0C122369C9190042035A /* hash.h in Headers */,
+				0A9C0C102369C9190042035A /* field_10x26_impl.h in Headers */,
+				0A9C0C192369C9190042035A /* scratch_impl.h in Headers */,
+				0A9C0C222369C9190042035A /* scalar_low.h in Headers */,
+				0A9C0C0A2369C9190042035A /* ecdsa_impl.h in Headers */,
+				0A9C0C202369C9190042035A /* ecmult.h in Headers */,
+				0A9C0C112369C9190042035A /* ecmult_const.h in Headers */,
+				0A9C0C3F2369CAAE0042035A /* ecmult_const_impl.h in Headers */,
+				0A9C0C142369C9190042035A /* num_gmp_impl.h in Headers */,
+				0A9C0C052369C9190042035A /* field.h in Headers */,
+				0A9C0C212369C9190042035A /* field_5x52.h in Headers */,
+				0A9C0C332369C9190042035A /* num.h in Headers */,
+				0A9C0C0E2369C9190042035A /* scalar_4x64.h in Headers */,
+				0A9C0C472369CEEF0042035A /* ecmult_static_context.h in Headers */,
+				0A9C0C182369C9190042035A /* basic-config.h in Headers */,
+				0A9C0C382369C9190042035A /* num_gmp.h in Headers */,
+				0A9C0C002369C9190042035A /* hash_impl.h in Headers */,
+				0A9C0C372369C9190042035A /* scalar_8x32_impl.h in Headers */,
+				0A9C0C322369C9190042035A /* num_impl.h in Headers */,
+				0A9C0C1D2369C9190042035A /* eckey.h in Headers */,
+				OBJ_34 /* secp256k1_ecdh.h in Headers */,
+				0A9C0C312369C9190042035A /* group_impl.h in Headers */,
+				0A9C0C352369C9190042035A /* field_5x52_asm_impl.h in Headers */,
+				OBJ_35 /* secp256k1_recovery.h in Headers */,
+				0A9C0C392369C9190042035A /* ecmult_gen.h in Headers */,
+				0A9C0C272369C9190042035A /* group.h in Headers */,
+				0A9C0C252369C9190042035A /* scalar_4x64_impl.h in Headers */,
+				0A9C0C3C2369C9190042035A /* scalar_impl.h in Headers */,
+				0A9C0C0C2369C9190042035A /* field_impl.h in Headers */,
+				0A9C0C162369C9190042035A /* eckey_impl.h in Headers */,
+				0A9C0C262369C9190042035A /* scratch.h in Headers */,
+				OBJ_36 /* secp256k1_preallocated.h in Headers */,
+				0A9C0C362369C9190042035A /* scalar.h in Headers */,
+				0A9C0C022369C9190042035A /* main_impl.h in Headers */,
+				0A9C0C462369CEEC0042035A /* libsecp256k1-config.h in Headers */,
+				0A9C0C3D2369C9190042035A /* ecmult_impl.h in Headers */,
+				OBJ_37 /* secp256k1.h in Headers */,
+				0A9C0C1B2369C9190042035A /* scalar_low_impl.h in Headers */,
+				0A9C0C072369C9190042035A /* ecdsa.h in Headers */,
+				0A9C0C1C2369C9190042035A /* ecmult_gen_impl.h in Headers */,
+				0A9C0C092369C9190042035A /* field_10x26.h in Headers */,
+				0A9C0C042369C9190042035A /* main_impl.h in Headers */,
+				0A9C0C0D2369C9190042035A /* field_5x52_int128_impl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		"secp256k1::SwiftPMPackageDescription" /* secp256k1PackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_40 /* Build configuration list for PBXNativeTarget "secp256k1PackageDescription" */;
+			buildPhases = (
+				OBJ_43 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = secp256k1PackageDescription;
+			productName = secp256k1PackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"secp256k1::secp256k1" /* secp256k1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_28 /* Build configuration list for PBXNativeTarget "secp256k1" */;
+			buildPhases = (
+				OBJ_31 /* Sources */,
+				OBJ_33 /* Headers */,
+				OBJ_38 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = secp256k1;
+			productName = secp256k1;
+			productReference = "secp256k1::secp256k1::Product" /* secp256k1.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "secp256k1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"secp256k1::secp256k1" /* secp256k1 */,
+				"secp256k1::SwiftPMPackageDescription" /* secp256k1PackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				0A9C0C3E2369CA730042035A /* secp256k1.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_44 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/secp256k1/Classes",
+					"$(SRCROOT)/secp256k1/Classes/secp256k1",
+					"$(SRCROOT)/secp256k1/Classes/secp256k1/src",
+				);
+				INFOPLIST_FILE = secp256k1.xcodeproj/secp256k1_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "$(SRCROOT)/include/module.modulemap";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-DHAVE_CONFIG_H=1",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = secp256k1;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = secp256k1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/secp256k1/Classes",
+					"$(SRCROOT)/secp256k1/Classes/secp256k1",
+					"$(SRCROOT)/secp256k1/Classes/secp256k1/src",
+				);
+				INFOPLIST_FILE = secp256k1.xcodeproj/secp256k1_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "$(SRCROOT)/include/module.modulemap";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-DHAVE_CONFIG_H=1",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = secp256k1;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGET_NAME = secp256k1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "secp256k1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_28 /* Build configuration list for PBXNativeTarget "secp256k1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_29 /* Debug */,
+				OBJ_30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_40 /* Build configuration list for PBXNativeTarget "secp256k1PackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_41 /* Debug */,
+				OBJ_42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
